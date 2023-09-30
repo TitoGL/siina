@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de alarmas/alertas sísmicas.">
+    <meta name="keywords" content="alarmas, alertas, sísmicas, seguridad">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tusitio.com/">
+    <title>Alarmas Sísmicas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+   
+</head>
+<body>
+    <!-- Menú -->
+    <nav>
+        <div class="menu-container"></div>
+        <div class="menu-left">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <ul>
+                <li><a href="#">Empresas</a>
+                    <ul class="submenu-empresas">
+                        <li><a href="#">Instituciones educativas</a></li>
+                        <li><a href="#">Hospitales</a></li>
+                        <li><a href="#">Constructoras</a></li>
+                        <li><a href="#">Centros Comerciales</a></li>
+                        <li><a href="#">Hoteles</a></li>
+                        <li><a href="#">Industrias</a></li>
+                        <li><a href="#">Gobierno</a></li>
+                        <li><a href="#">Residenciales</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="https://agenciaplanit.com/siina/1/tienda/">Tienda</a>
+            <a href="#">Blog</a>
+        </div>
+        
+        <div class="logo">
+            <a href="#"><img src="imagenes/logo.png" alt="Logo"></a>
+        </div>
+        
+        <div class="menu-right">
+            <a href="#">Testimonios</a>
+            <a href="#">Contacto</a>           
+            <div class="social-icons">
+                <a href="#" class="social-link"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-link"><img src="imagenes/instagram-icon.png" alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-link"><img src="imagenes/whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+        
+        <!-- Botón de menú tipo hamburguesa -->
+        <button class="menu-toggle">&#9776;</button>
+        &#9776; <!-- Representa el ícono de tres líneas -->
+        </button>
+    </nav>
+    <!-- Sección 2: Hero -->
+    <section class="hero">
+        <img src="imagenes/tierra.svg" alt="Tierra" id="tierra">
+        <img src="imagenes/onda_sismica.svg" id="onda-sismica" class="parallax" alt="Onda Sísmica">
+        <img src="imagenes/ciudad.svg" alt="Ciudad" id="ciudad">
+        <img src="imagenes/letra_estarPreparadoEsLaMejorSolucion.svg" alt="Letra" id="letra">
+        
+    </section>    
+
+    <img src="imagenes/alerta_sismica.svg" alt="Alerta Sísmica" id="alerta">
+   
+    <!-- Sección 2: Productos -->
+    <section class="productos">
+        <img src="imagenes/mapa_mexico.svg" alt="Mapa de México" id="mexico-map">
+        <h1 class="titulo-productos mobile-visible">Alarma Sísmica</h1>
+        <h2 class="subtitulo-productos">para Hogares y Negocios</h2>
+        <p class="texto-productos">
+           <strong> Somos líderes en sistemas de alertamiento sísmico</strong> , dedicados a brindarte la <strong> tecnología más avanzada en multialertamiento</strong> . Nuestra misión es garantizar <strong> tu seguridad y la de tus seres queridos</strong> , proporcionándote <strong> alertas precisas y oportunas ante cualquier temblor.</strong> .
+        </p>       
+    </section>
+    
+    <!-- Sección 3: Diferenciación -->    
+    <section class="diferenciacion">
+        <div class="caracteristicas-img-container">
+            <img src="imagenes/caracteristicas.svg" alt="Características" class="caracteristicas-img">
+        </div>
+        <img src="imagenes/logo_narajna.svg" alt="Logo Naranja" class="logo-naranja">
+        <img src="imagenes/mapa_naranja.svg" alt="Mapa Naranja" class="mapa-naranja-img">
+        <div class="acordeon">
+            <button onclick="toggleAcordeon(this)">Receptor <strong>Rápido y Eficiente</strong></button>
+            <div class="acordeon-content">
+              <p>El <strong>producto SiiNA</strong> se destaca por su capacidad para recibir <strong>alertas en tiempo real</strong>. Su diseño avanzado garantiza que no se pierda ninguna alerta, ofreciendo <strong>seguridad y confianza a sus usuarios</strong>.</p>
+            </div>
+          
+            <button onclick="toggleAcordeon(this)">Tecnología <strong> Multialertamiento</strong></button>
+            <div class="acordeon-content">
+              <p>Especialmente <strong>diseñado para captar la Alerta Sísmica SASMEX®</strong>, SiiNA utiliza una <strong>tecnología de vanguardia</strong> que lo distingue en el mercado mexicano.</p>
+            </div>
+
+            <button onclick="toggleAcordeon(this)"><strong>Portal eSiiNA</strong></button>
+            <div class="acordeon-content">
+              <p>Portal Web que permite <strong>monitorear en tiempo real el estado de tus estaciones y programar simulacros</strong>.</p>
+                 </div>
+            
+            <button onclick="toggleAcordeon(this)"><strong>Alertas Personalizadas</strong></button>
+            <div class="acordeon-content">
+              <p>Crea alertas con audios únicos para cada fenómeno que quieras alertar (solo Serie S).</strong>.</p>
+                 </div>
+
+            <button onclick="toggleAcordeon(this)"><strong>Cumplimiento Normativo</strong></button>
+            <div class="acordeon-content">
+              <p>SiiNA no solo es eficiente, sino que también <strong>cumple con todas las regulaciones y normativas establecidas por la CDMX</strong>, asegurando su validez y confiabilidad.</p>
+                 </div>
+            
+            <button onclick="toggleAcordeon(this)"><strong>Tecnología VHF</strong></button>
+            <div class="acordeon-content">
+              <p> Inspirado en el <strong>protocolo SAME de la NOAA</strong>, SiiNA utiliza <strong>señales de radio VHF para transmitir alertas de manera efectiva y rápida</strong>.</p>
+                 </div>    
+
+            <button onclick="toggleAcordeon(this)"><strong>Presencia Nacional</strong></button>
+            <div class="acordeon-content">
+              <p>Con transmisores en estados clave como <strong>CDMX, Guerrero, Oaxaca y más</strong>, SiiNA garantiza una cobertura amplia y confiable. </p>
+             </div>  
+
+             <button onclick="toggleAcordeon(this)"><strong>Reacción Inmediata</strong></button>
+             <div class="acordeon-content">
+               <p>Ante cualquier sismo, el <strong>receptor VHF de SiiNA responde de inmediato</strong>, brindando a los usuarios <strong>valiosos segundos para prepararse</strong>.</p>
+             </div>  
+
+             <button onclick="toggleAcordeon(this)"><strong>Tecnología CAP®</strong> Integrada</button>
+             <div class="acordeon-content">
+               <p>SiiNA va más allá con su <strong>tecnología CAP</strong>, permitiendo la <strong>transmisión de alertas</strong> a través de diversos medios, desde radio hasta internet.</p>
+            </div>  
+
+            <button onclick="toggleAcordeon(this)"><strong>Único en México</strong></button>
+            <div class="acordeon-content">
+              <p>SiiNA se enorgullece de ser el <strong>único receptor en México que integra el innovador Protocolo CAP</strong>, marcando la diferencia en alertas de distintos fenómenos.</p>
+            
+            </div> 
+          </div>
+    </section>
+
+    <!-- Sección 4: Sismografo -->
+    <section class="sismografo">   
+        <div class="sismografia">
+            
+            <div class="linea"></div>
+            <div class="aguja"></div>
+            <img src="imagenes/alerta_sismica_vertical.svg" alt="Alerta Sísmica" class="alerta-sismica">
+        
+        </div>
+    </section>
+
+    <!-- Sección 5: Cumplimos -->
+    <section class="cumplimos">
+        <h1 class="titulo-cumplimos">¡Alerta Sísmica Precisa!</h1>
+        <h2 class="subtitulo-cumplimos">Cumplimos con la normativa de la CDMX</h2>
+    </section>
+
+    <!-- Sección 6: Opciones -->
+    <section class="opciones">
+        <div class="tercio">
+            <!-- Contenido de la primera parte -->
+            <!-- Tabla 1 -->
+            <div class="pricing-table">
+                <h2>SiiNA L010m</h2>
+                <p>IDEAL PARA HOGARES</p>
+                <ul>
+                    <li>Receptor VHF-SASMEX y Módulo SiiNA®</li>
+                    <li>2 bocinas de 10w integradas</li>
+                    <li>Hasta 4,000 m2 de sonorización *</li>
+                    <li>Acceso al Portal eSiiNA por 1 año</li>
+                    <li>Conexión para sistemas automáticos externos</li>
+                    <li>Garantía de 1 año</li>
+                    <li>Fácil instalación, puede ser realizada por el cliente</li>
+                    <li>Crédito o Contado</li>
+                </ul>
+                <div class="precio">$11,950 MXN</div>
+                <a href="https://agenciaplanit.com/siina/1/tienda/product/siina-l010m/" style="text-decoration: none;">
+                    <button class="buy-button">COMPRAR</button>
+                </a>
+            </div>
+        </div>
+           
+       
+    
+        <div class="tercio">
+            <!-- Contenido de la segunda parte -->
+            <!-- Tabla 2 -->
+            <div class="pricing-table">
+                <h2>SiiNA L020</h2>
+                <p>IDEAL PARA EDIFICIOS E INDUSTRIA</p>
+                <ul>
+                    <li>Receptor VHF-SASMEX y Módulo SiiNA®</li>
+                    <li>Sistema de amplificación integrado con capacidad de hasta 4 altavoces. 2 altavoces incluidos</li>
+                    <li>Hasta 9,000 m2 de sonorización*</li>
+                    <li>Acceso al Portal eSiiNA por 1 año</li>
+                    <li>Conexión para sistemas automáticos externos</li>
+                    <li>Garantía de 1 año</li>
+                    <li>Instalación no incluida</li>
+                    <li>Crédito o Contado</li>
+                </ul>
+                <div class="precio">$19,950</div>
+                <a href="https://agenciaplanit.com/siina/1/tienda/product/siina-l020/" style="text-decoration: none;">
+                    <button class="buy-button">COMPRAR</button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="tercio">
+            <!-- Contenido de la tercera parte -->
+            <!-- Tabla 3 -->
+            <div class="pricing-table">
+                <h2>SiiNA S0XX</h2>
+                <p>IDEAL PARA NEGOCIOS</p>
+                <ul>
+                    <li>Receptor VHF-SASMEX y Módulo SiiNA®</li>
+                    <li>Sistema de amplificación integrado con capacidad de 4 altavoces incluidos</li>
+                    <li>Hasta 37,000 m2 de sonorización *</li>
+                    <li>Acceso al Portal eSiiNA por 1 año</li>
+                    <li>Conexión para sistemas automáticos externos</li>
+                    <li>Sistema de respaldo de energía</li>
+                    <li>Garantía de 1 año</li>
+                    <li>Crédito o Contado</li>
+                </ul>
+                <div class="precio">$10,450</div>
+                <a href="https://agenciaplanit.com/siina/1/tienda/product/siina-s0xx/" style="text-decoration: none;">
+                    <button class="buy-button">COMPRAR</button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+        
+    <!-- Sección 7: Monitoreo -->
+    <section class="monitoreo">    
+    <h1 class="fade-in">Soluciones Adicionales de Monitoreo</h1>
+   
+    <div class="slider-container fade-in">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="slider">    
+            <div class="slide" data-text="Nivel de Agua">Nivel de Agua</div>
+            <div class="slide" data-text="Calidad del aire">Calidad del aire</div>
+            <div class="slide" data-text="Humedad y Temperatura">Humedad y Temperatura</div>
+            <div class="slide" data-text="Precipitación Pluvial">Precipitación Pluvial</div>
+            <div class="slide" data-text="Medición de viento">Medición de viento</div>
+            <div class="slide" data-text="UV y Radiación Solar">UV y Radiación Solar</div>
+        </div>
+        <button class="arrow right-arrow">&#10095;</button>
+    </div>      
+    
+    <!-- Texto Adicional -->
+    <div class="texto-adicional fade-in">
+        Las ventajas adicionales de <strong>SIINA® son su versatilidad y precisión</strong>. Al integrar <strong>múltiples sensores</strong> y tecnologías avanzadas, <strong>SIINA® proporciona datos en tiempo real</strong>, permitiendo una respuesta proactiva ante <strong>variaciones ambientales</strong>. Esta capacidad de anticipación puede ser crucial para la <strong>toma de decisiones</strong>, ya sea en el ámbito <strong>gubernamental, empresarial o personal</strong>.
+    </div>
+    </section>
+
+    <!-- Sección 8: Testimonios -->
+    <section class="testimonios">
+    <div class="row">
+        <!-- Testimonio 1 -->
+        <div class="testimonial col">
+            <h3>Carlos Mendoza</h3>
+            <p>Administrador de Condominio Residencial</p>
+            <p class="testimonial-text">"Desde que instalamos la alerta sísmica SIINA en nuestro edificio, todos los residentes se sienten más seguros. La rapidez y precisión de las alertas son impresionantes."</p>
+            <div class="stars">
+                ★★★★★
+            </div>
+        </div>
+        
+        <!-- Testimonio 2 -->
+        <div class="testimonial col">
+             <h3>Luisa Fernández</h3>
+            <p>Directora de una escuela primaria</p>
+            <p class="testimonial-text">"La seguridad de nuestros estudiantes es primordial. Gracias a SIINA, ahora contamos con alertas tempranas que nos dan tiempo suficiente para evacuar y resguardarnos."</p>
+            <div class="stars">
+                ★★★★★
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Testimonio 3 -->
+        <div class="testimonial col">
+            <h3>Javier Paredes</h3>
+            <p>Dueño de una pequeña empresa</p>
+            <p class="testimonial-text">"SIINA nos ha permitido proteger nuestro equipo y personal. La inversión ha valido la pena, la tranquilidad que nos da es invaluable."</p>
+            <div class="stars">
+                ★★★★☆
+            </div>
+        </div>
+        
+        <!-- Testimonio 4 -->
+        <div class="testimonial col">
+            <h3>Mariana Ruiz</h3>
+            <p>Madre de familia</p>
+            <p class="testimonial-text">"Tener SIINA en casa ha sido una bendición. Me siento más tranquila sabiendo que mis hijos recibirán una alerta temprana en caso de sismo."</p>
+            <div class="stars">
+                ★★★★★
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Testimonio 5 -->
+        <div class="testimonial col">
+            <h3>Roberto Soto</h3>
+            <p>Gerente de un hotel</p>
+            <p class="testimonial-text">"Nuestros huéspedes aprecian que prioricemos su seguridad. Con SIINA, hemos mejorado nuestra preparación ante sismos y hemos recibido comentarios positivos al respecto."</p>
+            <div class="stars">
+                ★★★★☆
+            </div>
+        </div>
+        
+        <!-- Testimonio 6 -->
+        <div class="testimonial col">
+            <h3>Ana María González</h3>
+            <p>Encargada de una casa de retiro</p>
+            <p class="testimonial-text">"En nuestra casa de retiro, muchos de los residentes tienen movilidad reducida. Gracias a SIINA, podemos actuar con anticipación y garantizar su seguridad en caso de sismo."</p>
+            <div class="stars">
+                ★★★★★
+            </div>
+        </div>
+    </div>
+     <!-- Imagen en la parte inferior izquierda -->
+     <div class="scrolling-image">
+        <img src="imagenes/clientes_satisfechos.svg" alt="Clientes Satisfechos">
+    </div>
+    </section>
+
+     <!-- Sección 9: Llamado a la acción -->
+     <section class="cta">
+        <h1 class="titulo-cta">¡Hasta 12 MSI!</h1>
+        <h2 class="subtitulo-cta">Aprovecha y págalo a crédito</h2>
+        <button class="btn-cta">¡Comprar ahora!</button> <!-- Botón añadido -->
+    </section>
+
+<!-- Sección 9: Blog -->
+<section class="blog">
+    <div class="blog-article">
+        <img src="imagenes/alerta_sismica_vertical.svg" alt="La Importancia de las Alertas Sísmicas en el Siglo XXI">
+        <h2>La Importancia de las Alertas Sísmicas.</h2>
+        <h3>Protegiendo Vidas en Tiempos de Incertidumbre.</h3>
+        <p>Descubre cómo las alertas sísmicas modernas están salvando vidas y por qué son esenciales en zonas sísmicas.</p>
+        <button>Leer más</button>
+    </div>
+    <div class="blog-article">
+        <img src="imagenes/alerta_sismica.svg" alt="Cómo Funcionan las Alertas Sísmicas y Su Tecnología">
+        <h2>Cómo Funcionan las Alertas Sísmicas y Su Tecnología.</h2>
+        <h3>Entendiendo la Ciencia Detrás de la Seguridad.</h3>
+        <p>Explora la tecnología detrás de las alertas sísmicas y cómo ayudan a prepararse ante un terremoto inminente.</p>
+        <button>Leer más</button>
+    </div>
+    <div class="blog-article">
+        <img src="imagenes/alerta_sismica_vertical.svg" alt="Preparativos y Respuestas Ante Alertas Sísmicas">
+        <h2>Preparativos y Respuestas Ante Alertas Sísmicas.</h2>
+        <h3>Maximizando la Seguridad Durante Eventos Sísmicos.</h3>
+        <p>Aprende las mejores prácticas y respuestas cuando suena una alerta sísmica para garantizar la seguridad.</p>
+        <button>Leer más</button>
+    </div>
+</section>
+
+    <!-- Footer -->
+<section class="footer">
+    <div class="footer-content">
+        <h2>SIINA</h2>
+        <p>Protegiendo comunidades con tecnología avanzada en alertas sísmicas.</p>
+        <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        
+    </div>
+</section>
+
+    <script src="js/codigojs.js"></script>
+    <script src="js/animaciones.js"></script>
+</body>
+</html>
+

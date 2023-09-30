@@ -1,0 +1,368 @@
+/* hero.css */
+
+/* Reset de margen y padding para body y .hero */
+body, .hero {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+/* Estilos generales para la sección Hero */
+.hero {
+    background-color: #DB865C; /* Color de fondo */
+    height: 2000px; /* Altura ajustada a 5500px */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex; /* Preparado por si quieres centrar contenido en el futuro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative; /* Esto es importante para que las imágenes posicionadas absolutamente se relacionen con este contenedor */
+    z-index: 7; /* Establecido para estar detrás de las otras secciones */
+}
+.productos {
+    background-color: #f1f1f1; /* O el color que desees */
+    z-index: 11; /* Asegurándonos de que esté detrás de alerta_sismica.svg pero al frente de la sección hero */
+    position: relative; 
+    height: 1200px; 
+    overflow: hidden;
+}
+/* Estilo para la sección de Diferenciación */
+.diferenciacion {
+    background-color: #C86C3F; /* Color de fondo para la sección de Diferenciación */
+    height: auto; /* Cambiado a auto para permitir que el contenido determine la altura */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 12; /* Establecido para estar delante de Hero */
+    position: relative;
+    padding-bottom: 50px; /* Espacio en la parte inferior para dar espacio al contenido */
+    
+}
+
+.sismografo {
+    background-color: #dadada; /* Color de fondo */
+    height: 400px; /* Altura ajustada a 5500px */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex; /* Preparado por si quieres centrar contenido en el futuro */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative; /* Esto es importante para que las imágenes posicionadas absolutamente se relacionen con este contenedor */
+    z-index: 14; /* Establecido para estar detrás de las otras secciones */
+}
+.cumplimos {
+    background-color: #2b2b2b;
+    height: auto; /* Cambiamos a auto para que la sección se ajuste al contenido */
+    min-height: 80px; /* Establecemos una altura mínima para asegurarnos de que tenga espacio */
+    width: 100%;
+    z-index: 15;
+    position: relative;
+    padding: 25px 200px; /* Ajustamos el padding para centrar el contenido verticalmente */
+}
+.opciones {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    height: 600px;
+    width: 100%;
+    z-index: 15;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.contacto {
+    background-color: #059bff; /* Color de fondo para la sección de Diferenciación */
+    height: auto; /* Cambiado a auto para permitir que el contenido determine la altura */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 18; /* Establecido para estar delante de Hero */
+    position: relative;
+    padding-bottom: 50px; /* Espacio en la parte inferior para dar espacio al contenido */
+    height: 300px; /* Altura ajustada a 5500px */
+    
+}
+
+/* Estilo para el Footer */
+.footer {
+    background-color: #2b2b2b; /* Color de fondo para el Footer */
+    height: 300px; /* Altura del Footer */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 15; /* Establecido para estar delante de Llamado a la acción */
+    position: relative;
+} 
+.titulo-productos, .subtitulo-productos, .texto-productos {
+    transform: translateY(-200px);
+}
+.titulo-productos {
+    font-size: 110px; 
+    color: #808080;
+    position: absolute;
+    top: calc(50% - 450px); 
+    left: calc(50% + -300px); 
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    letter-spacing: -2px; 
+    font-weight: bold; 
+    white-space: nowrap; 
+    opacity: 0;
+    transition: opacity .5s; 
+    
+}
+.subtitulo-productos {
+    font-size: 50px; 
+    color: #808080;
+    position: absolute;
+    top: calc(50% - 320px);  /* Ajuste para que el subtítulo esté debajo del título */
+    left: calc(50% + -320px); 
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    letter-spacing: -2px; 
+    font-weight: normal; 
+    white-space: nowrap; 
+    opacity: 0;
+    transition: opacity .5s; 
+}
+.texto-productos {
+    font-size: 24px; 
+    color: #808080;
+    position: absolute;
+    top: calc(50% - 140px);  /* Ajuste para que el texto esté debajo del subtítulo */
+    left: calc(50% + -320px); 
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 500px;  /* Ancho del texto */
+    text-align: justify;  /* Texto justificado */
+    opacity: 0;
+    transition: opacity .5s; 
+}
+.texto-productos::before {
+    content: "\2713"; /* Carácter Unicode para la palomita */
+    font-weight: 900; /* Aumentar el grosor de las palomitas */
+    font-size: 30px; /* Aumentar el tamaño de las palomitas */
+    color: #868686; /* Puedes ajustar el color según lo necesites */
+    margin-right: -21px; /* Ajusta el margen derecho para reducir el espacio */
+}
+
+#tierra, #ciudad {
+    position: fixed; 
+    left: 50%;  
+    top: 50%;  /* Centra verticalmente */
+    z-index: 9;
+    width: auto;  
+    height: auto;
+    transform: translateX(-50%);  /* Centra horizontalmente */
+    display: block;
+}
+#tierra {
+    max-width: 300%; 
+}
+#ciudad {
+    z-index: 8; /* Asegura que esté detrás de tierra.svg */
+    max-width: 30%; /* Reduce el tamaño a la mitad */
+    top: calc(50% - 300px); /* Sube la ciudad 500px respecto a su posición centrada */
+    position: fixed; 
+    left: 50%;  
+    transform: translateX(-50%);  /* Centra horizontalmente */
+    display: block;
+}
+/* Estilos para la imagen onda_sismica.svg */
+#onda-sismica, #onda-sismica2, .wave {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 10;
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity .5s; 
+}
+#letra {
+    position: fixed; 
+    left: 50%;  
+    top: calc(50% + 180px);  /* Bajamos la imagen 50px en escritorio */
+    transform: translateX(-50%) translateY(-50%) scale(0.25);  /* Tamaño reducido para escritorio */
+    z-index: 12;  
+    opacity: 0;  
+}
+#alerta {
+    position: fixed; 
+    left: calc(50% - 240px); /* Ajustamos la posición inicial */
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 13; /* Asegurándonos de que esté al frente de la sección productos */
+    opacity: 0; 
+    width: 500px;
+}
+#mexico-map {
+    position: absolute;
+    top: calc(50% - 5px); /* Mover el título 500px hacia arriba */
+    left: calc(50% + -50px); /* Mover el título 200px hacia la derecha */
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Asegurándonos de que esté al frente dentro de la sección productos */
+    
+}
+/* Estilos para el escritorio */
+@media screen and (min-width: 768px) {
+    .hero iframe {
+        max-width: 100%; /* Asegura que el iframe no exceda el ancho del contenedor */
+        border: none; /* Elimina cualquier borde del iframe */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para darle profundidad */
+    }
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .hero iframe {
+        width: 100%; /* Asegura que el iframe ocupe todo el ancho disponible */
+        height: auto; /* Permite que el iframe mantenga su relación de aspecto */
+        border: none; /* Elimina cualquier borde del iframe */
+    }
+    #ciudad {
+        max-width: 90%; /* Tamaño ajustado para celulares */
+        top: calc(50% - 220px); /* Baja la ciudad 150px respecto a su posición anterior */
+    }
+    #tierra {
+        top: calc(50% + 100px); /* Baja tierra.svg 100px respecto a su posición centrada */
+        transform: translateX(-50%) translateY(-50%); /* Centra horizontalmente y verticalmente */
+        max-width: 450%; /* Aumenta el tamaño 1.5 veces */
+    }
+    #alerta {
+        width: 70%; /* Ajusta este valor según el tamaño deseado */
+        height: auto; /* Esto mantiene la proporción de la imagen */
+        left: calc(50% + -120px);
+    }
+    #letra {
+        width: 300px !important;/* Establecemos un ancho fijo en píxeles */
+        max-width: none; /* Eliminamos cualquier restricción de max-width */
+        display: block;
+        margin: 0 auto;
+    }
+     
+    .titulo-productos {
+        white-space: normal;
+        max-width: 20%; /* Ajusta según necesidad */
+        font-size: 10px; /* Reducir el tamaño de fuente a 30pts para celulares */
+        left: calc(50% + -250px);
+        line-height: 40px;
+        top: calc(50% - 250px); /* Ajustado para subir el título */
+    }
+    .subtitulo-productos {
+        white-space: normal;
+        max-width: 350px; /* Ajustado a 350px */
+        font-size: 20px; /* Reducir el tamaño de fuente para celulares */
+        line-height: 40px;
+        top: calc(50% - 150px); /* Bajar el subtítulo 100px respecto a su posición anterior */
+        width: 500px;
+        left: calc(50% + 40px);
+    }
+    .texto-productos {
+        font-size: 16px; /* Reducir el tamaño de fuente para celulares */
+        top: calc(50% - 70px);  /* Ajustado para subir el texto */
+        width: 90%;  /* Ajusta el ancho para dispositivos móviles */
+    }
+    titulo-productos.mobile-visible {
+        display: block !important; /* El !important asegura que esta regla tenga prioridad */
+    }
+}
+/* Estilo general del acordeón */
+.acordeon {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: 250px; /* Margen izquierdo de 250px */
+    margin-top: 250px; /* Margen superior para dar espacio en la parte superior */
+    margin-bottom: 150px;
+}
+/* Estilo para el botón del panel */
+.acordeon button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 24px; /* Aumentar el tamaño del texto del título a 28pts */
+    background-color: #f1f1f100;
+    color: rgb(255, 255, 255); /* Color del texto del título */
+    margin-bottom: 1px; /* Aumentar el espacio entre los títulos del acordeón */
+}
+/* Estilo para el botón del panel cuando se pasa el mouse por encima */
+.acordeon button:hover {
+    background-color: #D47A4C  ;
+}
+/* Estilo para el ícono de palomita */
+.acordeon button::before {
+    content: "\2713\00A0\00A0"; /* Carácter Unicode para la palomita seguido de dos espacios no rompibles */
+    font-weight: 900; /* Aumentar el grosor de las palomitas */
+    font-size: 30px; /* Aumentar el tamaño de las palomitas */
+}
+/* Estilo para el contenido del panel */
+.acordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #c7c7c700;
+    padding: 0 15px;
+    line-height: 1.9; /* Aumentar las líneas entre el texto de las descripciones */
+    font-size: 23px;
+    text-align: justify;
+}
+/* Estilo para el contenido del panel cuando está activo */
+.acordeon-content.active {
+    max-height: 300px; /* Puedes ajustar este valor según el contenido que tengas */
+}
+/* Estilo para centrar el acordeón y darle un margen izquierdo de 250px */
+.diferenciacion {
+    display: flex;
+    justify-content: center;
+     /*align-items: center;*/
+    height: 100%; /* Asegurarse de que el contenedor ocupe todo el espacio vertical disponible */
+}
+.diferenciacion .acordeon {
+    margin-left: 250px;
+}
+/* Estilos para la sección Diferenciación */
+#diferenciacion {
+    position: relative; /* Establece un contexto de posicionamiento para los elementos internos */
+}
+/* Estilos para el contenedor de la imagen de Características */
+.caracteristicas-img-container {
+    position: absolute; /* Posicionamiento absoluto para superponer la imagen */
+    top: 100px; /* Margen superior de 100px */
+    left: calc(50% + -600px); /* Alineado a la izquierda */
+    width: 40%; /* Ancho completo */
+    z-index: -1; /* Coloca la imagen detrás de la imagen de Alarma Sísmica */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+}
+/* Estilos para la imagen de Características */
+.caracteristicas-img {
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+}
+/* Efecto de desplazamiento hacia abajo al pasar el mouse sobre la imagen */
+#diferenciacion:hover .caracteristicas-img {
+    transform: translateY(125%); /* Desplaza la imagen un 10% hacia abajo */
+}
+/* Estilos para el logo naranja */
+.logo-naranja {
+    position: absolute; /* Posicionamiento absoluto para colocar la imagen en una posición específica */
+    bottom: 0; /* Alineado en la parte inferior */
+    right: 0; /* Alineado a la derecha */
+    z-index: 12; /* Coloca la imagen detrás de alerta_sismica.svg (suponiendo que alerta_sismica.svg tiene un z-index de -1) */
+    width: 50%; /* Ajusta el ancho según lo necesites */
+    height: 50%; /* Ajusta la altura según lo necesites */
+}
+.caracteristicas-img, button[onclick="toggleAcordeon(this)"] {
+    opacity: 0;
+    transition: opacity 0.5s; /* Transición suave */
+}
+.mapa-naranja-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: -2; /* Asegurándonos de que esté detrás de alerta_sismica.svg */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    left: calc(50% + -100px); /* Alineado a la izquierda */
+    top: calc(50% + -70px); /* Alineado a la izquierda */
+}

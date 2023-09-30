@@ -1,0 +1,471 @@
+.sismografia {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Aumentamos el tamaño del cuadro */
+    border: 1px solid #00000000;
+    overflow: hidden;
+}
+
+/* Estilo para la imagen de alerta sísmica */
+.alerta-sismica {
+    position: absolute;
+    top: 50%;
+    left: 100px; /* 100px a la derecha */
+    width: 300px; /* Tamaño al doble */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    z-index: 12;
+}
+
+.aguja {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 80px; /* Doble del tamaño original */
+    height: 1px;
+    background-color: rgb(167, 100, 0);
+    transform-origin: right;
+}
+/* Animación de vibración */
+@keyframes vibracion {
+    0% { transform: translateY(-50%) translateX(0); }
+    25% { transform: translateY(-50%) translateX(-5px); }
+    50% { transform: translateY(-50%) translateX(5px); }
+    75% { transform: translateY(-50%) translateX(-5px); }
+    100% { transform: translateY(-50%) translateX(0); }
+}
+
+/* Animación de titulo */
+
+.titulo-cumplimos {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+}
+
+.subtitulo-cumplimos {
+    color: #DB865C;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: -10px;
+    text-align: center; 
+}
+
+/* precios */
+
+.pricing-section {
+    display: flex;
+    align-items: flex-start; /* Alinea las tablas al inicio del contenedor */
+    width: 100%;
+    gap: 20px; /* Espacio entre las tablas */
+}
+
+.pricing-table {
+    border: 1px solid #ccc;
+    padding: 40px; /* Aumentado el padding interior */
+    width: 80%; /* Reducido el ancho a 80% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-width: 0; /* Esto asegura que el contenido no fuerce un ancho mayor */
+    margin: 0 10px; /* Margen entre las tablas */
+}
+
+.tercio {
+    width: 33.33%; /* Divide el espacio en tres partes iguales */
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho total */
+    padding: 0 10px; /* Añade un poco de espacio alrededor para que no se vean apretados */
+}
+
+.pricing-table:last-child {
+    margin-right: 0; /* Elimina el margen derecho de la última tabla */
+}
+
+.pricing-table:hover {
+    transform: scale(1.05);
+}
+
+.pricing-table h2, .pricing-table p, .pricing-table ul {
+    text-align: center;
+}
+
+.pricing-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-table li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.pricing-table li:last-child {
+    border-bottom: none;
+}
+
+.buy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px; 
+}
+
+.buy-button:hover {
+    background-color: #A64C1F;
+}
+
+/* Estilo para el título de cada tabla */
+.pricing-table h2 {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 5px; /* Añadir un poco de padding para dar espacio al texto */
+}
+
+/* Estilo para el botón */
+.buy-button {
+    display: block;
+    width: 100%; /* Abarcar todo el ancho de la tabla */
+    margin: 20px 0; /* Eliminar el margen automático y añadir un margen superior e inferior */
+}
+
+/* Estilo para los precios */
+.precio {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el precio y el contenido anterior */
+}
+
+/* Estilo para los separadores */
+.pricing-table p,
+.pricing-table ul,
+.pricing-table li:not(:last-child) {
+    border-bottom: 1px solid #999999;
+    padding-bottom: 5px; /* Espacio entre el texto y el borde inferior */
+    margin-bottom: 5px; /* Espacio entre el borde y el siguiente elemento */
+}
+
+/*Sección Monitoreo */
+
+.monitoreo {
+    background-color: #DB865C;
+    display: flex;
+    flex-direction: column; /* Mantiene el título y el slider uno encima del otro */
+    align-items: center; /* Centrar el contenido horizontalmente */
+    height: 800px;
+    width: 100%;
+    z-index: 12;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: -200px;
+    background-image: url('../imagenes/mapa_naranja_claro.svg');
+    background-repeat: no-repeat;
+    background-size: 80%; /* Ajusta el tamaño de la imagen a la mitad de su tamaño original */
+    background-position: left 800px; /* Mueve la imagen 500px hacia abajo */
+    background-attachment: scroll; 
+}
+.monitoreo h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30pt; /* Aumenta el tamaño de fuente a 50pts */
+    font-weight: bold; /* Asegura que el título esté en negrita */
+    margin-left: -770px;
+    margin-top: 150px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 650px; /* Aumenta el ancho del contenedor del slider a 600px */
+    margin-left: -800px; /* Mantiene el slider movido 300px hacia la izquierda */
+    margin-top: 10px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    position: absolute; /* Posiciona las flechas absolutamente */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.slide {
+    display: flex; /* Ajusta a flex */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-width: 600px;
+    height: 100%; /* Ocupa todo el alto disponible */
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: -3px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+.texto-adicional {
+    font-size: 22px; /* Tamaño del texto */
+    text-align: justify; /* Justificar el texto */
+    width: 500px; /* Ancho del contenedor del texto */
+    margin: -20px 1000px 20px auto;  /* Mover el contenedor del texto 100px hacia la izquierda y agregar un espacio arriba y abajo */
+
+}
+
+/* Estilo inicial para los elementos que aparecerán gradualmente */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+ 
+
+/* Seccion Testimonios */
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb; /* Color de fondo blanco */
+    opacity: 1; /* Opacidad al 100% */
+    padding: 100px; 
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.testimonial.col {
+    flex: 1;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px; 
+    margin: 10px 240px; /* Aumenta el margen horizontal */
+}
+
+.testimonial.col:hover {
+    transform: scale(1.05);
+}
+
+imagen-testimonios{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h3, p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stars {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(22, 22, 22, 0.719);
+}
+/* Estilo para la imagen que aparece al hacer scroll */
+.scrolling-image {
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 0;       /* Alineado al borde inferior */
+    left: 10;         /* Alineado al borde izquierdo */
+    z-index: 11;     /* Para que la imagen quede detrás del contenido */
+    left: calc(50% + -700px); 
+    top: calc(50% - -150px); 
+}
+
+.scrolling-image img {
+    width: 350px;    /* Ancho de la imagen (ajusta según tus necesidades) */
+    height: auto;    /* Altura automática para mantener las proporciones */
+}
+
+/*Sección CTA */
+.cta {
+    background-color: #2b2b2b;
+    height: auto; /* Cambiamos a auto para que la sección se ajuste al contenido */
+    min-height: 80px; /* Establecemos una altura mínima para asegurarnos de que tenga espacio */
+    width: 100%;
+    z-index: 15;
+    position: relative;
+    padding: 25px 200px; /* Ajustamos el padding para centrar el contenido verticalmente */
+}
+
+.titulo-cta {
+    position: relative; /* Aseguramos que el título tenga una posición relativa para que la propiedad left funcione */
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(235, 230, 230);
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+    text-align: center; 
+    left: -250px; /* Ajusta este valor según lo lejos que quieras mover el título hacia la izquierda */
+}
+
+.subtitulo-cta {
+    color: #DB865C;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center; 
+}
+.btn-cta {
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    background-color: #e4e1e0;
+    border: none;
+    border-radius: 5px;
+    color: #313131;
+    font-size: 22px; /* Aumenta el tamaño de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative; /* Establece la posición a relativa para mover el botón */
+    right: -330px; /* Mueve el botón 20px hacia la derecha */
+    top: -80px; /* Mueve el botón 20px hacia arriba */
+}
+
+.btn-cta:hover {
+    background-color: #C7755A;
+}
+
+/*Sección BLOG*/
+body .blog {
+    background: linear-gradient(135deg, #f9f9f9, #e9e9e9);
+}
+.blog {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e9e9e9); /* Fondo con degradado */
+    border-radius: 10px; /* Bordes redondeados para la sección */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    z-index: 9999; 
+    position: relative;
+    height: 500px;
+    align-items: center; /* Centra verticalmente */
+    z-index: 16;
+}
+
+.blog-article {
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #d8d8d8;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.blog-article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.blog-article h3 {
+    font-style: italic;
+}
+
+.blog-article h2, .blog-article h3 {
+    margin: 10px 0;
+}
+
+.blog-article button {
+    padding: 10px 20px;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blog-article button:hover {
+    background-color: #ac613c;
+}
+
+/*Sección Footer*/
+.footer {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    height: 200px;
+    z-index: 15;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #E74C3C;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #DB865C;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #a1552f;
+}

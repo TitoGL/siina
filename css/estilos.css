@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+nav {
+    background-color: #000;
+    color: #ececec;
+    /* Otros estilos para el menú */
+}
+
+.hero iframe {
+    width: 100%;
+    height: auto;
+}

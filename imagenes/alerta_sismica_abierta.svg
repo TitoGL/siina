@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000px" height="1037px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 59 61"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:white;stroke-width:0;stroke-miterlimit:22.9256}
+    .fil3 {fill:none}
+    .fil1 {fill:#5A5A5A}
+    .fil0 {fill:#BABABA}
+    .fil2 {fill:#CCCCCC}
+    .fil4 {fill:white}
+   ]]>
+  </style>
+     <clipPath id="id0">
+      <path d="M1 1l57 0 0 59 -57 0 0 -59z"/>
+     </clipPath>
+    <clipPath id="id1">
+     <rect x="15" y="14" width="32" height="33"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1337952770784">
+   <g>
+    <g>
+    </g>
+    <g style="clip-path:url(#id0)">
+     <g>
+      <polygon class="fil0" points="51,6 59,0 59,62 51,56 "/>
+      <polygon class="fil1" points="-1,0 8,6 51,6 59,0 "/>
+      <polygon class="fil1" points="8,6 8,56 -1,61 -1,0 "/>
+      <polygon class="fil0" points="8,56 -1,61 0,61 59,61 51,56 "/>
+      <rect class="fil2" x="7" y="6" width="44" height="51"/>
+     </g>
+    </g>
+    <polygon class="fil3 str0" points="1,1 58,1 58,60 1,60 "/>
+    <path class="fil4" d="M0 0l59 0 0 61 -59 0 0 -61zm2 55l2 0c1,0 2,1 2,2l0 2 47 0 0 -2c0,-1 1,-2 2,-2l2 0 0 -49 -2 0c-1,0 -2,-1 -2,-2l0 -2 -47 0 0 2c0,1 -1,2 -2,2l-2 0 0 49zm2 3c-1,0 -1,0 -1,-1 0,0 0,-1 1,-1 0,0 1,0 1,1 0,1 0,1 -1,1zm51 0c1,0 1,0 1,-1 0,0 0,-1 -1,-1 -1,0 -1,0 -1,1 0,1 0,1 1,1zm-51 -55c-1,0 -1,0 -1,1 0,0 0,1 1,1 0,0 1,0 1,-1 0,-1 0,-1 -1,-1zm51 0c1,0 1,0 1,1 0,0 0,1 -1,1 -1,0 -1,0 -1,-1 0,-1 0,-1 1,-1z"/>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image x="15" y="14" width="32" height="33" xlink:href="alerta_sismica_abierta_Images\alerta_sismica_abierta_ImgID1.png"/>
+   </g>
+  </g>
+ </g>
+</svg>

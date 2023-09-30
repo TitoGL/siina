@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1500px" height="447px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 553 165"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="805" font-variant="normal" style="fill-rule:nonzero" font-weight="900">
+	<font-face 
+		font-family="Montserrat Black">
+		<font-face-src>
+			<font-face-name name="Montserrat Black"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="805" d="M580.998 0l244 0 -305.999 699.998 -231.999 0 -305.999 -699.998 239.999 0 46.9997 122 265.999 0 46.9997 -122zm-247.999 291.999l68.0006 175.999 67.9996 -175.999 -136 0z"/>
+   <glyph unicode="I" horiz-adv-x="349" d="M56.9995 0l236 0 0 699.998 -236 0 0 -699.998z"/>
+   <glyph unicode="N" horiz-adv-x="803" d="M516.999 699.998l0 -317.999 -265.999 317.999 -194 0 0 -699.998 230 0 0 317.999 265.999 -317.999 193.999 0 0 699.998 -229.999 0z"/>
+   <glyph unicode="S" horiz-adv-x="656" d="M317.999 -16c217,0 325.999,108 325.999,235.999 0,258.166 -386.999,188.166 -386.999,271.999 0,24 22.0003,43.9996 91.0003,43.9996 61,0 125.999,-16.9994 194.999,-51.9996l70.9998 170.999c-73.0005,41.0004 -170,61 -263.999,61 -217,0 -325.999,-106 -325.999,-235.999 0,-260.999 386.999,-189.833 386.999,-278 0,-24 -24,-37.9993 -91.0003,-37.9993 -76.999,0 -164.999,24.9994 -230.999,63.9991l-75.9996 -171.999c69.9994,-43.0002 188,-72.0001 304.999,-72.0001z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Montserrat Black";font-variant:normal;font-weight:900;src:url("#FontID0") format(svg)}
+    .fil1 {fill:none}
+    .fil0 {fill:#DB865C}
+    .fnt0 {font-weight:900;font-size:168px;font-family:'Montserrat Black'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <text x="10" y="147"  class="fil0 fnt0">SIINA</text>
+  <rect class="fil1" width="553" height="165"/>
+ </g>
+</svg>

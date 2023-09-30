@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="83.1378mm" height="435.488mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 665 3483"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#B85C2F;stroke-width:2;stroke-miterlimit:22.9256}
+    .str0 {stroke:#C86C3F;stroke-width:2;stroke-miterlimit:22.9256}
+    .fil3 {fill:none}
+    .fil0 {fill:#A64C1F}
+    .fil4 {fill:#B85C2F}
+    .fil1 {fill:#C86C3F}
+    .fil2 {fill:darkorange}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 3483l0 -3440c61,-21 244,-75 378,-17 163,71 287,238 287,238l0 3219 -665 0z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M499 98l-148 40 -351 85 0 3259 665 0 0 -3219c0,0 -66,-90 -166,-166z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M0 3483l0 -3440c61,-21 244,-75 378,-17 163,71 287,238 287,238l0 3219 -665 0z"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+    <path class="fil0" d="M2457 315l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <g id="_3089762836944">
+     <path id="1" class="fil1 str0" d="M2457 331l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+     <path class="fil2 str0" d="M2469 384l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+     <path class="fil1 str0" d="M2489 421l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+     <path class="fil0 str0" d="M2493 450l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+    </g>
+   </g>
+   <g style="clip-path:url(#id2)">
+    <path class="fil3" d="M2457 315l-167 -129 -285 -110 -275 -52 -409 43c0,0 -171,13 -303,9l-399 -10 -268 72 -404 98 0 3296 2523 0 -12 -3217z"/>
+    <path class="fil4 str1" d="M-302 313c0,0 261,-142 323,-153 62,-11 221,-34 323,-45 102,-11 312,-74 346,-74 34,0 136,-6 232,-6 96,0 187,0 278,0 91,0 153,6 238,-6 85,-11 221,-17 221,-17l170 0c0,0 142,11 193,34 51,23 108,34 176,74 68,40 130,62 193,108 62,45 221,176 221,176l-23 91c0,0 -244,-244 -340,-289 -96,-45 -170,-91 -289,-108 -351,-50 -321,0 -617,0 -108,0 -204,0 -295,0 -91,0 -227,0 -306,0 -231,0 -260,61 -408,74 -68,6 -249,68 -249,68l-397 153 11 -79z"/>
+   </g>
+  </g>
+  <path class="fil3" d="M0 3483l0 -3440c61,-21 244,-75 378,-17 163,71 287,238 287,238l0 3219 -665 0z"/>
+ </g>
+</svg>
